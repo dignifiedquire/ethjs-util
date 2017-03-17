@@ -21,7 +21,7 @@ describe('check all exports', () => {
     'toUtf8'];
 
     Object.keys(util).forEach((utilKey) => {
-      assert.equal(expected.includes(utilKey), true, utilKey);
+      assert.equal(expected.indexOf(utilKey) > -1, true, utilKey);
     });
   });
 
